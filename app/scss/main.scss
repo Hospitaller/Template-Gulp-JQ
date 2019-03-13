@@ -1,0 +1,13 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "./_mixins/media"; // Always at the end
+
+
+.wrapper {
+    width: 500px;
+    @include respondMin(lgTo) {
+        width: 100px;
+        color: red;
+    }
+}
